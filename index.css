@@ -102,6 +102,7 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
+  padding-left: 20px;
 }
 
 p {
@@ -138,6 +139,9 @@ footer p {
 }
 footer p a[href='#top']{
   color: #f3eeda;
+}
+a[href] {
+  padding-left: 20px;
 }
 
 footer p a[href='#top']:hover  {

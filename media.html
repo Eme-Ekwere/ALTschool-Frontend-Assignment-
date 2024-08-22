@@ -26,10 +26,19 @@
           <h2>Profile Picture</h2>
 
           <picture>
-          <!-- Small screens (e.g., mobile devices) -->
-           <source srcset="ALTschool-Frontend-Assignment-/small.jpg" media="(max-width: 600px)" />
-           <source srcset="ALTschool-Frontend-Assignment-/medium.jpg" media="(min-width: 601px) and (max-width: 1024px)" />
-           <source srcset="ALTschool-Frontend-Assignment-/large.jpg" media="(min-width: 1025px)" />
+            <source srcset="https://github.com/Eme-Ekwere/ALTschool-Frontend-Assignment-/blob/new/small.jpg"
+             media="(max-width: 480px)">
+             <source srcset="https://github.com/Eme-Ekwere/ALTschool-Frontend-Assignment-/blob/new/medium.jpg"
+             media="(max-width: 1024)">
+             <source media="(768px)" srcset="https://github.com/Eme-Ekwere/ALTschool-Frontend-Assignment-/blob/new/large.jpg"
+              sizes="">
+          </picture>
+
+          <picture>
+           <!-- Small screens (e.g., mobile devices) -->
+           <source srcset="ALTschool-Frontend-Assignment-/small.jpg" media="(max-width: 480px)" />
+           <source srcset="ALTschool-Frontend-Assignment-/medium.jpg" media="(max-width: 768px)" />
+           <source srcset="ALTschool-Frontend-Assignment-/large.jpg" media="(max-width: 1280px)" />
                <!-- Fallback image if none of the above matches -->
            <img src="image-large.jpg" alt="Responsive Image" />
          </picture>
