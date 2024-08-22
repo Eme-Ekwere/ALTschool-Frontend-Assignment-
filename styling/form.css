@@ -1,0 +1,106 @@
+/* General styles */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f5f5f5; 
+  color: #333; 
+  line-height: 1.6;
+  margin: 0;
+  padding: 0px;
+  font-size: small;
+}
+
+/* Header styling */
+header {
+  background-color: #4d4c4b; 
+  color: #6e5a79; 
+  padding: 10px 5px;
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: #f6f4e1;
+}
+
+nav[aria-label="Breadcrumb"] {
+  margin-top: 3%;
+  font-size: 0.6rem;
+}
+
+nav[aria-label="Breadcrumb"] ul {
+  padding: 1px;
+  list-style: none;
+  display: flex;
+  
+  justify-content: center;
+  gap: 10px;
+}
+
+nav[aria-label="Breadcrumb"] li {
+  display: inline-block;
+}
+
+nav[aria-label="Breadcrumb"] li a {
+  color: rgb(243, 232, 211); 
+  text-decoration: none;
+  padding: 3px 2px;
+  border: 0.5px; 
+  border-radius: 6px;
+  flex-direction: row;
+  transition: all 0.4s ease;
+  display: inline-block;
+  font-size: 0.6rem;
+}
+
+nav[aria-label="Breadcrumb"] li a:hover {
+  color: #e0d4e7;
+  font-size: 0.9rem;
+}
+
+a {
+  color: #6e5a79; /* Lilac */
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+a:hover {
+  border-color: #6e5a79; /* Lilac */
+} 
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem;
+  }
+  
+  h2 {
+      font-size: 1.5rem;
+  }
+  
+  h3 {
+      font-size: 1.2rem;
+  }
+  
+  p {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  
+  section {
+      padding: 15px;
+  }
+  
+  nav[aria-label="Breadcrumb"] li {
+      margin-bottom: 3px;
+     
+  }
+} 
+
+form {
+  justify-content: right;
+}
