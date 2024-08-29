@@ -28,38 +28,44 @@ h1 {
     padding: 5%;
 }
 
-/* Navigation styles */
 nav[aria-label="Breadcrumb"] {
     margin-top: 3%;
     font-size: 0.9rem;
-}
-
-nav[aria-label="Breadcrumb"] ol {
+  }
+  
+  nav[aria-label="Breadcrumb"] ol {
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-nav[aria-label="Breadcrumb"] li {
+  }
+  
+  nav[aria-label="Breadcrumb"] li {
     display: inline-block;
-}
-
-nav[aria-label="Breadcrumb"] li a {
-    color: rgb(243, 232, 211);
+  }
+  
+  nav[aria-label="Breadcrumb"] li a {
+    color: rgb(243, 232, 211); 
     text-decoration: none;
     padding: 3px 2px;
-    border: 0.5px 
+    border: 0.5px solid #6e5a79; /* Lilac border */
+    border-radius: 6px;
     transition: all 0.4s ease;
     display: inline-block;
-    font-size: 0.6rem;
-}
-
-nav[aria-label="Breadcrumb"] li a:hover {
+    font-size: 0.8rem; /* Adjusted to better suit small screens */
+  }
+  
+  nav[aria-label="Breadcrumb"] li a:hover {
     color: #e0d4e7;
     font-size: 0.9rem;
-}
+  }
+  
+  nav[aria-label="Pagescroll"] a:hover {
+    color: #4d4c4b;
+    font-size: 0.9rem;
+  }
+  
 
 /* Main content styling */
 main {

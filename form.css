@@ -2,17 +2,17 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #f5f5f5; 
-  color: #333; 
+  color: #333; /* Dark grey for text */
   line-height: 1.6;
   margin: 0;
-  padding: 0px;
+  padding: 0;
   font-size: small;
 }
 
 /* Header styling */
 header {
-  background-color: #4d4c4b; 
-  color: #6e5a79; 
+  background-color: #4d4c4b; /* Soft beige */
+  color: #6e5a79; /* Lilac */
   padding: 10px 5px;
   text-align: center;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
@@ -20,80 +20,172 @@ header {
 }
 
 h1 {
-  font-size: 0.9rem;
+  font-size: 3.5rem;
+  text-align: center;
   margin: 0;
-  font-weight: 100;
-  letter-spacing: 1px;
+  font-weight: 500;
+  letter-spacing: 0px;
   color: #f6f4e1;
+  padding: 5%;
 }
+
 
 nav[aria-label="Breadcrumb"] {
-  margin-top: 3%;
-  font-size: 0.6rem;
+margin-top: 3%;
+font-size: 0.9rem;
 }
 
-nav[aria-label="Breadcrumb"] ul {
-  padding: 1px;
-  list-style: none;
-  display: flex;
-  
-  justify-content: center;
-  gap: 10px;
+nav[aria-label="Breadcrumb"] ol {
+padding: 0;
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 20px;
 }
 
 nav[aria-label="Breadcrumb"] li {
-  display: inline-block;
+display: inline-block;
 }
 
 nav[aria-label="Breadcrumb"] li a {
-  color: rgb(243, 232, 211); 
-  text-decoration: none;
-  padding: 3px 2px;
-  border: 0.5px; 
-  border-radius: 6px;
-  flex-direction: row;
-  transition: all 0.4s ease;
-  display: inline-block;
-  font-size: 0.6rem;
+color: rgb(243, 232, 211); 
+text-decoration: none;
+padding: 3px 2px;
+border: 0.5px solid #6e5a79; /* Lilac border */
+border-radius: 6px;
+transition: all 0.4s ease;
+display: inline-block;
+font-size: 0.8rem; /* Adjusted to better suit small screens */
 }
 
 nav[aria-label="Breadcrumb"] li a:hover {
-  color: #e0d4e7;
-  font-size: 0.9rem;
+color: #e0d4e7;
+font-size: 0.9rem;
 }
+
+nav[aria-label="Pagescroll"] a:hover {
+color: #4d4c4b;
+font-size: 0.9rem;
+}
+
 
 a {
   color: #6e5a79; /* Lilac */
   text-decoration: none;
   border-bottom: 1px solid transparent;
   padding-bottom: 2px;
+  padding-left: 10px;
 }
 
 a:hover {
   border-color: #6e5a79; /* Lilac */
-} 
+}
+
+h2 {
+  color: #6e5a79;; /* Light beige */
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+h3 {
+  color: #6e5a79;
+  padding-left: 10px;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+  border-bottom: 2px solid #6e5a79; /* Lilac border */
+  padding-bottom: 5px;
+}
+
+
+p {
+  margin-bottom: 15px;
+  max-width: px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 0px;
+  font-size: large;
+}
+
+
+main{ 
+  padding: 30px;
+  max-width: 1000%;
+  margin: 0 auto;
+  align-items: center;
+  align-self: center;
+}
+
+
+form{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 
+  }
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #463950; /* Deep purple for labels */
+  }
+  
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 15px;
+  border: 1px solid #e8eade;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+form input[type="password"],
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  background-color: #fff; /* White background for inputs and textarea */
+  border-radius: 6px;
+}
+
+
+button[type="submit"] {
+  background-color: #1a1a1b; /* Deep purple for the submit button */
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+  justify-content: center;
+}
+
+form input[type="submit"]:hover {
+  background-color: #ebebe3; /* Light pastel pink hover effect for the submit button */
+}
 
 @media (max-width: 768px) {
   h1 {
-      font-size: 2rem;
+      font-size: 4rem;
+     
   }
   
   h2 {
       font-size: 1.5rem;
+      justify-self: center;
   }
   
   h3 {
       font-size: 1.2rem;
   }
-  
-  p {
-      padding-left: 10px;
-      padding-right: 10px;
-  }
-  
-  section {
-      padding: 15px;
-  }
+
   
   nav[aria-label="Breadcrumb"] li {
       margin-bottom: 3px;
@@ -101,6 +193,4 @@ a:hover {
   }
 } 
 
-form {
-  justify-content: right;
-}
+

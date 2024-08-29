@@ -25,35 +25,25 @@
         <section>
           <h2>Profile Picture</h2>
 
-          <picture>
-            <source srcset="https://github.com/Eme-Ekwere/ALTschool-Frontend-Assignment-/blob/new/small.jpg"
-             media="(max-width: 480px)">
-             <source srcset="https://github.com/Eme-Ekwere/ALTschool-Frontend-Assignment-/blob/new/medium.jpg"
-             media="(max-width: 1024)">
-             <source media="(768px)" srcset="https://github.com/Eme-Ekwere/ALTschool-Frontend-Assignment-/blob/new/large.jpg"
-              sizes="">
-          </picture>
-
-          <picture>
-           <!-- Small screens (e.g., mobile devices) -->
-           <source srcset="ALTschool-Frontend-Assignment-/small.jpg" media="(max-width: 480px)" />
-           <source srcset="ALTschool-Frontend-Assignment-/medium.jpg" media="(max-width: 768px)" />
-           <source srcset="ALTschool-Frontend-Assignment-/large.jpg" media="(max-width: 1280px)" />
-               <!-- Fallback image if none of the above matches -->
-           <img src="image-large.jpg" alt="Responsive Image" />
-         </picture>
+          <!-- Profile picture section -->
+      <section>
+        <picture>
+          <!-- Responsive image sources for different screen sizes -->
+          <source srcset="large2.jpg" media="(min-width: 800px)" />
+          <source srcset="medium.jpg" media="(min-width: 600px)" />
+          <source srcset="small.jpg" media="(max-width: 200px)" />
+          <img
+            src="small.jpg"
+            alt="A picture of me"
+          />
+        </picture>
+      </section>
 
           <audio controls>
             <h2>Background Music</h2>
             <source src="./focus.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
-
-          <video width="320" height="240" controls>
-            <source src="video-message.mp4" type="video/mp4" />
-            <source src="video-message.ogg" type="video/ogg" />
-            Your browser does not support the video tag.
-          </video>
 
           <figure>
             <blockquote>
@@ -171,6 +161,22 @@
           </p>
         </section>
       </article>
+      <section>
+        <figure>
+          <blockquote>
+            Here's a video to remind you  -- IT'S YOU VS YOU.
+          </blockquote>
+        </figure>
+        
+        <video width="440" height="240" controls>
+          <source src="You-vs-You.mp4" type="video/mp4" />
+          
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      
+
     </main>
   </body>
 </html>

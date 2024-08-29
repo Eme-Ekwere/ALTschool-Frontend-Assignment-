@@ -28,43 +28,45 @@ h1 {
     padding: 5%;
 }
 
+n
 nav[aria-label="Breadcrumb"] {
-    margin-top: 3%;
-    font-size: 0.9rem;
+  margin-top: 3%;
+  font-size: 0.9rem;
 }
 
 nav[aria-label="Breadcrumb"] ol {
-    padding: 2px;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav[aria-label="Breadcrumb"] li {
-    display: inline-block;
+  display: inline-block;
 }
 
 nav[aria-label="Breadcrumb"] li a {
-    color: rgb(243, 232, 211); 
-    text-decoration: none;
-    padding: 3px 2px;
-    border: 0.5px  #6e5a79; /* Lilac border */
-    border-radius: 6px;
-    transition: all 0.4s ease;
-    display: inline-block;
-    font-size: 0.6rem;
+  color: rgb(243, 232, 211); 
+  text-decoration: none;
+  padding: 3px 2px;
+  border: 0.5px solid #6e5a79; /* Lilac border */
+  border-radius: 6px;
+  transition: all 0.4s ease;
+  display: inline-block;
+  font-size: 0.8rem; /* Adjusted to better suit small screens */
 }
 
 nav[aria-label="Breadcrumb"] li a:hover {
-    color:  #e0d4e7;
-    font-size: 0.9rem;
+  color: #e0d4e7;
+  font-size: 0.9rem;
 }
 
 nav[aria-label="Pagescroll"] a:hover {
-    color: #4d4c4b;
-    font-size: 0.9rem;
+  color: #4d4c4b;
+  font-size: 0.9rem;
 }
+
 
 a {
     color: #6e5a79; /* Lilac */
